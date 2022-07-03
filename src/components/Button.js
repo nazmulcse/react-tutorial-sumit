@@ -2,12 +2,14 @@ import React from 'react';
 
 class Button extends React.Component {
     render() {
-        // console.log('Button is rendering');
-        const { change } = this.props;
+        const { change, locale, text, show } = this.props;
         return (
-            <button type="button" onClick={change}>
-                Click here
-            </button>
+            <div>
+                <button type="button" onClick={() => change(locale)}>
+                    {text}
+                </button>
+                {show && <p>Hello</p>}
+            </div>
         );
     }
 }
