@@ -22,5 +22,11 @@
   "emmet.triggerExpansionOnTab": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "emojisense.languages": {
+    "markdown": true,
+    "plaintext": false,
+    "json": true,
+    "scminput": true // language used in the source control commit message box
+}
 }
